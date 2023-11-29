@@ -1,3 +1,5 @@
 roomId,HouseNumber,category,volume,PersonNum,Is_available
-1,C303,3,500,2,8
-2,Y204,2,210,5,18
+1,A505,2,200,0,8
+2,C203,2,2,0,8
+3,A504,4,400,0,8
+4,E502,2,2000,2,8

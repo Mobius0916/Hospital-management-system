@@ -103,8 +103,7 @@ void doctor::addPerson()
 
 void doctor::printDetails()
 {
-    if (id == -1)
-        return;
+    if (id == -1) return;
     person::printDetails();
     cout << "Type            : " << type << "\n";
     cout << "Lastbooktime    : " << last_hh << "\n";
@@ -195,17 +194,14 @@ void doctor::getDetails(int rec)
         for (auto i : matchingRecords)
             i.printDetails();
         string tt = "N";
-        if (matchingRecords.size() > rec)
-        {
-            do
-            {
+        if (matchingRecords.size() > rec){
+            do{
                 int reqId;
                 cout << "\nEnter the ID of the required doctor: ";
                 cin >> reqId;
                 if (hospital::doctorsList.find(reqId) != hospital::doctorsList.end())
                     *this = hospital::doctorsList[reqId];
-                else
-                {
+                else{
                     cout << "\nInvalid ID!\nTry again? (Y = Yes || N = No)\n";
                     cin >> tt;
                     while (tt != "Y" || tt != "N")

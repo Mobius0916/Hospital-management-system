@@ -103,8 +103,7 @@ void appointment::book()
     cout << "\n\nIs the patient already registered (Y : Yes || N : No)?\n";
     string ans;
     cin >> ans;
-    while (ans != "Y" && ans != "N")
-    {
+    while (ans != "Y" && ans != "N"){
         cout << "Y or N?\n";
         cin >> ans;
     }
@@ -117,23 +116,29 @@ void appointment::book()
     {
         cout << "Search for the required patient:\n\n";
         ans = "Y";
-        while (ans == "Y")
-        {
+        while (ans == "Y"){
             P.getDetails();
             ans = "K";
-            if (P.id == -1)
-            {
+            if (P.id == -1){
                 cout << "Try again (Y : Yes || N : No)?\n";
                 cin >> ans;
-                while (ans != "Y" && ans != "N")
-                {
+                while (ans != "Y" && ans != "N"){
                     cout << "Y or N?\n";
                     cin >> ans;
                 }
             }
+            else if (!P.alive){
+                cout << "Selected patient has gone. We hope his soul rests in peace, amen!\n";
+                cout << "Try again (Y : Yes || N : No)?\n";
+                cin >> ans;
+                while (ans != "Y" && ans != "N"){
+                    cout << "Y or N?\n";
+                    cin >> ans;
+                }
+                P.id = -1;
+            }
         }
-        if (ans == "Y")
-        {
+        if (ans == "Y"){
             return;
         }
     }
@@ -191,8 +196,7 @@ void appointment::book()
             }
         }
     }
-    if (ans == "N")
-    {
+    if (ans == "N"){
         return;
     }
 
@@ -223,20 +227,18 @@ void appointment::book()
                 cin >> ans;
             }
         }
-        else if (r.last_hh < st){
+        else if (r.last_hh > st){
             cout << "Sorry, selected room has no free slot left for that time range!\n";
             cout << "Search again (Y : Yes || N : No)?\n";
             cin >> ans;
-            while (ans != "Y" && ans != "N")
-            {
+            while (ans != "Y" && ans != "N"){
                 cout << "Y or N?\n";
                 cin >> ans;
             }
         }
     }
 
-    if (ans == "N")
-    {
+    if (ans == "N"){
         return;
     }
 

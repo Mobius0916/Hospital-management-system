@@ -539,11 +539,11 @@ int main()
     yyyymmdd = yyyy * 10000 + mm * 100 + dd;
     if (stoi(((s == "") ? ("0") : (s))) < yyyymmdd)
     {
-        f.open("./data/temp.csv", ios::out);
+        /*f.open("./data/temp.csv", ios::out);
         f << header << "\n";
         f.close();
         remove("./data/appointments.csv");
-        rename("./data/temp.csv", "./data/appointments.csv");
+        rename("./data/temp.csv", "./data/appointments.csv");*/
         fstream fout("./data/temp.csv", ios::out);
         f.open("./data/doctors.csv", ios::in);
         getline(f, temp);
@@ -558,6 +558,29 @@ int main()
         fout.close();
         remove("./data/doctors.csv");
         rename("./data/temp.csv", "./data/doctors.csv");
+
+        fstream f1;
+        f1.open("./data/rooms.csv", ios::in);
+        fstream f2("./data/temp.csv", ios::out);
+        getline(f1, temp);
+        f2 << temp << endl;
+        while (getline(f1, temp)){
+            stringstream s(temp);
+            string s1, s2, s3, s4, s5, s6;
+            getline(s, s1, ',');
+            getline(s, s2, ',');
+            getline(s, s3, ',');
+            getline(s, s4, ',');
+            getline(s, s5, ',');
+            getline(s, s6, ',');
+            s5 = "0";
+            temp = s1 + "," + s2 + "," + s3 + ","+ s4 + "," + s5 + "," + s6;
+            f2 << temp << endl;
+        }
+        f1.close();
+        f2.close();
+        remove("./data/rooms.csv");
+        rename("./data/temp.csv", "./data/rooms.csv");
     }
     else if (stoi(s) > yyyymmdd && s != "")
     {
