@@ -1,0 +1,2 @@
+appointmentId,date(YYYYMMDD),doctorId,patientId,startTime(in 24-hr format),endTime(in 24-hr format),room
+1,20231129,1,1,18,19,2
