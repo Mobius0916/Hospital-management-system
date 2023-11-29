@@ -8,10 +8,10 @@ doctorId,firstName,lastName,gender,age,mobNumber,address,type,Lastbooktime,appoi
 8,Melinda,Andrew,F,44,+919204049034,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,Cardiologist,12,0
 9,Isabella,Carwin,F,29,+913489998309,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,Psychatrist,18,0
 10,Shaun,Murphy,M,45,+918907837486,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,Psychatrist,22,0
-11,Freddie,Johnson,M,29,+912233497837,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,Neurologist,21,1
+11,Freddie,Johnson,M,29,+912233497837,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,Neurologist,21,0
 12,Regina,Phalange,F,29,+919086748935,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,Physician,22,0
 13,Ken,Adams,M,30,+919987998859,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,Physician,21,0
-14,Monica,Jain,F,32,+919999884758,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,ENT,20,0
+14,Monica,Jain,F,32,+919999884758,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,ENT,20,1
 15,Ryan,Mallick,M,34,+919999883748,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,ENT,19,0
 16,Patrick,Stephens,M,39,+912347893048,143^ Municipal Indl Estate^ Worli``Mumbai`Maharashtra`400018`India,Neurologist,19,0
 17,John,Markson,M,30,+912647893047,23-D^ Dazllia Street``Mumbai`Maharashtra`400011`India,Dermatologist,18,0

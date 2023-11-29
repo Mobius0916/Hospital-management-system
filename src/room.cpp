@@ -39,7 +39,6 @@ void room::fillMap(){
         r.volume = strToNum(s4);
         r.PersonNum = strToNum(s5);
         r.last_hh = strToNum(s6);
-        cout << s6 << endl;
         hospital::roomsList[r.id] = r;
     }
     f.close();
